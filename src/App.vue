@@ -14,15 +14,16 @@
 <script setup lang="ts">
 import SettingsSidebar from './components/SettingsSidebar.vue';
 import {ElementManager} from './elements';
+import {TTestElement} from './elements';
 import DefaultElements from './default-elements.json';
 import {ref} from 'vue';
 import {Test} from './generator';
 import TestVisualizer from './components/TestVisualizer.vue';
 import IntroScreen from './components/IntroScreen.vue';
 
-const elementMan = ref(new ElementManager());
+const elementMan = new ElementManager();
 
-elementMan.loadElementList(DefaultElements);
+elementMan.loadElementList(DefaultElements as TTestElement[]);
 const allElements = ref(elementMan.elementList);
 
 const generatedTest = ref(new Test());

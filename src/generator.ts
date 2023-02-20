@@ -44,7 +44,7 @@ export class Room {
     elements: TTestElement[];
 
     constructor() {
-        this.elementsToUse = [...DefaultElements];
+        this.elementsToUse = [];
         this.optionElementsPerRoom = 3;
         this.elements = [];
     }

@@ -160,7 +160,6 @@ const handleTabClick = (newTab: string) => {
 
 const filterElements = (filter: string) => {
     switch(filter) {
-    default:
     case 'all':
         activeElements.value = [...props.elements] as TTestElement[];
         break;

@@ -7,20 +7,21 @@ export interface TTestElement {
 }
 
 export class ElementManager {
-	elementList: TTestElement[];
+    elementList: TTestElement[];
 
-	// by default this list is empty. defaults are loaded in app.vue
-	constructor() {
-		this.elementList = [];	
-	}
+    // by default this list is empty. defaults are loaded in app.vue
+    constructor() {
+        this.elementList = [];	
+    }
 
-	loadElementList(_eljson: string) {
-		const list: TTestElement[] = JSON.parse(_eljson);
-		this.elementList.push(...list);
-	}
+    loadElementList(_eljson: TTestElement[]) {
+        //console.log(_eljson);
+        this.elementList = [...this.elementList, ..._eljson];
+        //this.elementList.push(..._eljson);
+    }
 
-	addElement(_element: TTestElement) {
-		this.elementList.push(_element)
-	}
+    addElement(_element: TTestElement) {
+        this.elementList.push(_element);
+    }
 }
 
