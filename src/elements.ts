@@ -1,9 +1,8 @@
 export interface TTestElement {
-    group: string;
     key: string;
     name: string;
     description: string;
-    games: string[];
+    tags: string[];
     dependsOn: string[];
 }
 

@@ -34,8 +34,8 @@
                 <div class="quick-filters">
                     <button @click="filterElements('all')">All</button>
                     <button @click="filterElements('none')">None</button>
-                    <button @click="filterElements('portal1')">Portal 1</button>
-                    <button @click="filterElements('portal2')">Portal 2</button>
+                    <button @click="filterElements('Portal 1')">Portal 1</button>
+                    <button @click="filterElements('Portal 2')">Portal 2</button>
                 </div>
                 <SettingsItem
                     v-for="(element, index) in elements"
@@ -167,11 +167,8 @@ const filterElements = (filter: string) => {
     case 'none':
         activeElements.value = [];
         break;
-    case 'portal1':
-        activeElements.value = [...props.elements].filter((item) => item.games.includes('portal1'));
-        break;
-    case 'portal2':
-        activeElements.value = [...props.elements].filter((item) => item.games.includes('portal2'));
+    default:
+        activeElements.value = [...props.elements].filter((item) => item.tags.includes(filter));
         break;
     }
 };
