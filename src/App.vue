@@ -13,15 +13,19 @@
 
 <script setup lang="ts">
 import SettingsSidebar from './components/SettingsSidebar.vue';
-import DefaultElements from './elements';
+import {ElementManager} from './elements';
+import DefaultElements from './default-elements.json';
 import {ref} from 'vue';
 import {Test} from './generator';
 import TestVisualizer from './components/TestVisualizer.vue';
 import IntroScreen from './components/IntroScreen.vue';
 
-const allElements = ref([...DefaultElements]);
-const generatedTest = ref(new Test());
+const elementMan = ref(new ElementManager());
 
+elementMan.loadElementList(DefaultElements);
+const allElements = ref(elementMan.elementList);
+
+const generatedTest = ref(new Test());
 
 const getMediaPreference = () => {
     const hasDarkPreference = window.matchMedia(

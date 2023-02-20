@@ -1,0 +1,23 @@
+[
+	{
+		"key": "fling-up",
+		"name": "Fling Up",
+		"description": "",
+		"tags": ["Portal 1", "Portal 2", "Fling"],
+		"dependsOn": []
+	},
+	{
+		"key": "fling-infinite",
+		"name": "Infinite Fling",
+		"description": "",
+		"tags": ["Portal 1", "Portal 2", "Fling"],
+		"dependsOn": []
+	},
+	{
+		"key": "fling-forward",
+		"name": "Fling Forward",
+		"description": "",
+		"tags": ["Portal 1", "Portal 2", "Fling"],
+		"dependsOn": []
+	}
+]
