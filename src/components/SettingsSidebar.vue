@@ -37,6 +37,11 @@
                     <button @click="filterElements('Portal 1')">Portal 1</button>
                     <button @click="filterElements('Portal 2')">Portal 2</button>
                 </div>
+                <div class="quick-filters">
+                    <button @click="console.log('test')">Add Element</button>
+                    <button @click="console.log('test')">Edit Element</button>
+                    <button @click="console.log('test')">Delete Element</button>
+                </div>
                 <SettingsItem
                     v-for="(element, index) in elements"
                     :key="index"
@@ -44,12 +49,6 @@
                     :active="activeElements.includes(element)"
                     @click="toggleElement(element)"
                 />
-                <section class="actions">
-                    <button @click="console.log('test')">Add Element</button>
-                    <button @click="console.log('test')">Edit Element</button>
-                    <button @click="console.log('test')">Delete Element</button>
-                </section>
-
             </section>
             <section
                 v-if="activeTab === 'options'"
