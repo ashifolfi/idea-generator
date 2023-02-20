@@ -19,5 +19,229 @@
 		"description": "",
 		"tags": ["Portal 1", "Portal 2", "Fling"],
 		"dependsOn": []
-	}
+	},
+	{
+		"key": "gel-repulsion",
+		"name": "Repulsion Gel",
+		"description": "",
+		"tags": ["Portal 2", "Gel"],
+		"dependsOn": []
+	},
+	{
+		"key": "gel-propulsion",
+		"name": "Propulsion Gel",
+		"description": "",
+		"tags": ["Portal 2", "Gel"],
+		"dependsOn": []
+	},
+	{
+		"key": "gel-conversion",
+		"name": "Conversion Gel",
+		"description": "",
+		"tags": ["Portal 2", "Gel"],
+		"dependsOm": []
+	},
+	{
+		"key": "funnel-push",
+		"name": "Funnel pushing forwards",
+		"description": "",
+		"tags": ["Portal 2", "Funnel"],
+		"dependsOn": []
+	},
+	{
+		"key": "funnel-pull",
+		"name": "Funnel pulling back",
+		"description": "",
+		"tags": ["Portal 2", "Funnel"],
+		"dependsOn": []
+	},
+	{
+		"key": "laser-provider",
+		"name": "Laser Emitter",
+		"description": "",
+		"tags": ["Portal 2", "Laser"],
+		"dependsOn": ["laser-receiver"]
+	},
+	{
+		"key": "laser-checkpoint",
+		"name": "Laser Node",
+		"description": "",
+		"tags": ["Portal 2", "Laser"],
+		"dependsOn": ["laser-provider"]
+	},
+	{
+		"key": "laser-receiver",
+		"name": "Laser Receiver",
+		"description": "",
+		"tags": ["Portal 2", "Laser"],
+		"dependsOn": ["laser-provider"]
+	},
+	{
+		"key": "pellet-provider",
+		"name": "Energy Pellet Emitter",
+		"description": "",
+		"tags": ["Portal 1", "Pellet"],
+		"dependsOn": ["pellet-receiver"]
+	},
+	{
+		"key": "pellet-receiver",
+		"name": "Energy Pellet Receiver",
+		"description": "",
+		"tags": ["Portal 1", "Pellet"],
+		"dependsOn": ["pellet-provider"]
+	},
+    {
+        "key": "laser-wall",
+        "name": "Laser Wall",
+        "description": "",
+        "tags": ["Portal 2", "Laser Wall"],
+        "dependsOn": []
+    },
+    {
+        "key": "lift",
+        "name": "Lift",
+        "description": "",
+        "tags": ["Portal 1", "Portal 2", "Lift"],
+        "dependsOn": []
+    },
+    {
+        "key": "scaffold",
+        "name": "Scaffold",
+        "description": "",
+        "tags": ["Portal 1", "Portal 2", "Lift"],
+        "dependsOn": []
+    },
+    {
+        "key": "stairs",
+        "name": "Stairs",
+        "description": "",
+        "tags": ["Portal 1", "Portal 2", "Stairs"],
+        "dependsOn": []
+    },
+    {
+        "key": "bottomless-pit",
+        "name": "Bottomless Pit",
+        "description": "",
+        "tags": ["Portal 2", "Decoration"],
+        "dependsOn": []
+    },
+    {
+        "key": "observation-room",
+        "name": "Observation Room",
+        "description": "",
+        "tags": ["Portal 1", "Portal 2", "Decoration"],
+        "dependsOn": []
+    },
+    {
+        "key": "behind-the-scenes",
+        "name": "Behind the Scenes",
+        "description": "",
+        "tags": ["Portal 1", "Portal 2", "Decoration"],
+        "dependsOn": []
+    },
+    {
+        "key": "water",
+        "name": "Water",
+        "description": "",
+        "tags": ["Portal 1", "Portal 2", "Water"],
+        "dependsOn": []
+    },
+    {
+        "key": "turret-general",
+        "name": "Turret",
+        "description": "",
+        "tags": ["Portal 1", "Portal 2", "Turret"],
+        "dependsOn": []
+    },
+    {
+        "key": "turret-rocket",
+        "name": "Rocket",
+        "description": "",
+        "tags": ["Portal 1", "Turret"],
+        "dependsOn": []
+    },
+    {
+        "key": "tube-vent",
+        "name": "Vent",
+        "description": "",
+        "tags": ["Portal 2", "Vent"],
+        "dependsOn": []
+    },
+    {
+        "key": "tube-vacuum",
+        "name": "VacTube",
+        "description": "",
+        "tags": ["Portal 2", "Vent"],
+        "dependsOn": []
+    },
+    {
+        "key": "bridge",
+        "name": "Bridge",
+        "description": "",
+        "tags": ["Portal 2", "Bridge"],
+        "dependsOn": []
+    },
+    {
+        "key": "button-general",
+        "name": "Button",
+        "description": "",
+        "tags": ["Portal 1", "Portal 2", "Button"],
+        "dependsOn": ["dropper-cube", "dropper-sphere"]
+    },
+    {
+        "key": "button-cube",
+        "name": "Cube Button",
+        "description": "",
+        "tags": ["Portal 1", "Portal 2", "Button"],
+        "dependsOn": ["dropper-cube"]
+    },
+    {
+        "key": "button-sphere",
+        "name": "Sphere Button",
+        "description": "",
+        "tags": ["Portal 2", "Button"],
+        "dependsOn": ["dropper-sphere"]
+    },
+    {
+        "key": "button-person",
+        "name": "Person Button",
+        "description": "",
+        "tags": ["Portal 1", "Portal 2", "Button"],
+        "dependsOn": []
+    },
+    {
+        "key": "dropper-cube",
+        "name": "Cube Dropper",
+        "description": "",
+        "tags": ["Portal 1", "Portal 2", "Dropper"],
+        "dependsOn": []
+    },
+    {
+        "key": "dropper-reflection",
+        "name": "Reflection Cube Dropper",
+        "description": "",
+        "tags": ["Portal 2", "Dropper"],
+        "dependsOn": []
+    },
+    {
+        "key": "dropper-sphere",
+        "name": "Sphere Dropper",
+        "description": "",
+        "tags": ["Portal 2", "Dropper"],
+        "dependsOn": []
+    },
+    {
+        "key": "fizzler",
+        "name": "Fizzler",
+        "description": "",
+        "tags": ["Portal 1", "Portal 2", "Fizzler"],
+        "dependsOn": []
+    },
+    {
+        "key": "faithplate",
+        "name": "Faithplate",
+        "description": "",
+        "tags": ["Portal 2", "Faithplate"],
+        "dependsOn": []
+    }
 ]
