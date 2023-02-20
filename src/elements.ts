@@ -15,9 +15,7 @@ export class ElementManager {
     }
 
     loadElementList(_eljson: TTestElement[]) {
-        //console.log(_eljson);
         this.elementList = [...this.elementList, ..._eljson];
-        //this.elementList.push(..._eljson);
     }
 
     addElement(_element: TTestElement) {
