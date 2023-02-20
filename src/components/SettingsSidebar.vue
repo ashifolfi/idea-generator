@@ -38,7 +38,7 @@
                     <button @click="filterElements('Portal 2')">Portal 2</button>
                 </div>
                 <div class="quick-filters">
-                    <button @click="console.log('test')">Add Element</button>
+                    <button @click="handleTabClick('addelement')">Add Element</button>
                     <button @click="console.log('test')">Edit Element</button>
                     <button @click="console.log('test')">Delete Element</button>
                 </div>
@@ -49,6 +49,23 @@
                     :active="activeElements.includes(element)"
                     @click="toggleElement(element)"
                 />
+            </section>
+            <section
+                v-if="activeTab === 'newelement'"
+                class="tab-options"
+            >
+                <div class="option">
+                    <label
+                        for="optionKey"
+                    >
+                        Key
+                    </label>
+                    <input
+                        id='optionKey'
+                        v-model='optionKey'
+                        type='string'
+                    />
+                </div>
             </section>
             <section
                 v-if="activeTab === 'options'"
