@@ -1,5 +1,4 @@
 import {TTestElement} from './elements';
-import DefaultElements from './elements';
 
 export interface TTest {
     rooms: TTestRoom[];
@@ -16,7 +15,7 @@ export class Test {
     rooms: TTestRoom[];
     
     constructor() {
-        this.elementsToUse = [...DefaultElements];
+        this.elementsToUse = [];
         this.optionRooms = 1;
         this.optionElementsPerRoom = 3;
         this.rooms = [];
